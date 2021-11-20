@@ -1,0 +1,34 @@
+<resources>
+    <declare-styleable name="JaugeAAiguille">
+        <!-- couleur de la barre dans le fond -->
+        <attr name="CircCouleurFondDebut" format="color" />
+        <attr name="CircCouleurFondFin" format="color" />
+        <attr name="CircLargeurFond" format="dimension" />
+        <attr name="CircBoutsFond" format="enum">
+            <enum name="ROUND" value="0"/>
+            <enum name="SQUARE" value="1"/>
+            <enum name="BUTT" value="2"/>
+        </attr>
+
+        <!-- Aiguille -->
+        <attr name="CircCouleurAiguille" format="color"/>
+        <attr name="CircLargeurAiguille" format="dimension"/>
+        <attr name="CircCentreAiguille" format="dimension"/>
+        <attr name="CircBoutsAiguille" format="enum">
+            <enum name="ROUND" value="0"/>
+            <enum name="SQUARE" value="1"/>
+            <enum name="BUTT" value="2"/>
+        </attr>
+
+        <!-- Valeurs -->
+        <attr name="CircMinimum" format="float" />
+        <attr name="CircMaximum" format="float" />
+        <attr name="CircValeur" format="float" />
+
+        <!-- Texte-->
+        <attr name="CircTexte" format="string"/>
+        <attr name="CircTextSize" format="dimension"/>
+        <attr name="CircTextCouleur" format="color"/>
+
+    </declare-styleable>
+</resources>

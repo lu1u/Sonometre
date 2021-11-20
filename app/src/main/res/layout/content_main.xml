@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.lpi.sonometre.JaugeAAiguille
+        android:id="@+id/jauge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:CircBoutsAiguille="ROUND"
+        app:CircBoutsFond="BUTT"
+        app:CircCentreAiguille="16dp"
+        app:CircCouleurAiguille="@color/colorAccent"
+        app:CircCouleurFondDebut="@color/colorPrimaryLight"
+        app:CircCouleurFondFin="@color/colorAccent"
+        app:CircLargeurAiguille="16dp"
+        app:CircLargeurFond="32dp"
+        app:CircMaximum="100"
+        app:CircMinimum="0"
+        app:CircTextCouleur="@color/colorPrimary"
+        app:CircTextSize="64dp"
+        app:CircTexte="0db"
+        app:CircValeur="20" />
+</LinearLayout>
