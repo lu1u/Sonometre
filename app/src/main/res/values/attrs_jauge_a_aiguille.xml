@@ -10,6 +10,11 @@
             <enum name="BUTT" value="2"/>
         </attr>
 
+        <!-- Graduations -->
+        <attr name="CircGraduationsTaille" format="dimension"/>
+        <attr name="CircGraduationCouleur" format="color"/>
+        <attr name="CircGraduationEchelle" format="integer"/>
+
         <!-- Aiguille -->
         <attr name="CircCouleurAiguille" format="color"/>
         <attr name="CircLargeurAiguille" format="dimension"/>
@@ -26,7 +31,8 @@
         <attr name="CircValeur" format="float" />
 
         <!-- Texte-->
-        <attr name="CircTexte" format="string"/>
+        <attr name="CircTexte1" format="string"/>
+        <attr name="CircTexte2" format="string"/>
         <attr name="CircTextSize" format="dimension"/>
         <attr name="CircTextCouleur" format="color"/>
 

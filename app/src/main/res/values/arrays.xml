@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="NiveauxSonores">
+        <item>0</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>85</item>
+        <item>100</item>
+        <item>110</item>
+        <item>110</item>
+        <item>120</item>
+        <item>140</item>
+    </array>
+
+    <array name="NomsNiveaux">
+        <item>@string/nomNiveau0</item>
+        <item>@string/nomNiveau1</item>
+        <item>@string/nomNiveau2</item>
+        <item>@string/nomNiveau3</item>
+        <item>@string/nomNiveau4</item>
+        <item>@string/nomNiveau5</item>
+        <item>@string/nomNiveau6</item>
+        <item>@string/nomNiveau7</item>
+        <item>@string/nomNiveau8</item>
+        <item>@string/nomNiveau9</item>
+    </array>
+</resources>

@@ -2,4 +2,16 @@
 <resources>
     <string name="app_name">Sonometre</string>
     <string name="action_settings">Paramètres</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="nomNiveau0">Seuil d\'audition</string>
+    <string name="nomNiveau1">Conversation à voix basse</string>
+    <string name="nomNiveau2">Bureau tranquille</string>
+    <string name="nomNiveau3">Marché animé</string>
+    <string name="nomNiveau4">Voiture, aspirateur</string>
+    <string name="nomNiveau5">Restaurant scolaire</string>
+    <string name="nomNiveau6">Klaxon, marteau piqueur</string>
+    <string name="nomNiveau7">Concert de rock</string>
+    <string name="nomNiveau8">Voiture de course</string>
+    <string name="nomNiveau9">Avion au décollage</string>
 </resources>

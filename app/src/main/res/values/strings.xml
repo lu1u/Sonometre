@@ -2,5 +2,14 @@
     <string name="app_name">Sonometre</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-
+    <string name="nomNiveau0">Hearing threshold</string>
+    <string name="nomNiveau1">Conversation in a low voice</string>
+    <string name="nomNiveau2">Quiet office</string>
+    <string name="nomNiveau3">Lively market</string>
+    <string name="nomNiveau4">Car, vacuum cleaner</string>
+    <string name="nomNiveau5">School canteen</string>
+    <string name="nomNiveau6">Horn, jackhammer</string>
+    <string name="nomNiveau7">Rock concert</string>
+    <string name="nomNiveau8">Race car</string>
+    <string name="nomNiveau9">Airplane taking off</string>
 </resources>
