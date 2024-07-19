@@ -19,6 +19,7 @@
         <attr name="CircCouleurAiguille" format="color"/>
         <attr name="CircLargeurAiguille" format="dimension"/>
         <attr name="CircCentreAiguille" format="dimension"/>
+        <attr name="CircAiguilleDepassement" format="dimension"/>
         <attr name="CircBoutsAiguille" format="enum">
             <enum name="ROUND" value="0"/>
             <enum name="SQUARE" value="1"/>

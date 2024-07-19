@@ -7,8 +7,12 @@ import android.os.Message;
 
 import androidx.annotation.NonNull;
 
+/***
+ * Classe pour ecouter le niveau sonore
+ */
 class Sonometre
 {
+	// Listener pour recevoir les niveaux sonores
 	public interface SoundLevelListener
 	{
 		void soundLevel(double level);
@@ -24,13 +28,12 @@ class Sonometre
 	final Handler handler = new Handler()
 	{
 		@Override
-		public void handleMessage(Message msg)
+		public void handleMessage(@NonNull Message msg)
 		{
 			super.handleMessage(msg);
 			if (_listener != null)
 			{
 				double v = (Double) msg.obj;
-
 				_listener.soundLevel(v);
 			}
 		}
@@ -81,10 +84,12 @@ class Sonometre
 				_preferences = Preferences.getInstance(context);
 				_recorder = new MediaRecorder();
 				_recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-				_recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+				_recorder.setOutputFormat(MediaRecorder.OutputFormat.DEFAULT);
 				_recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-				_recorder.setOutputFile("/dev/null");
+				//_recorder.setOutputFile("/dev/null");
+				_recorder.setOutputFile(context.getExternalCacheDir() + "/test.3gp");
 				_recorder.prepare();
+				Thread.sleep(1000); // Bug qui provoque une exception "Start failed"
 				_recorder.start();
 
 				_listener = listener;

@@ -1,11 +1,8 @@
 package com.lpi.sonometre;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -37,7 +34,7 @@ public class ParametresActivity extends AppCompatActivity
 		// Initialiser les controles
 		final Preferences p = Preferences.getInstance(this);
 		etCalibrage.setText(String.format("%.1f", p.getCalibrage()));
-		etDelai.setText(""+ p.getDelai());
+		etDelai.setText(String.valueOf(p.getDelai()));
 
 		// Gestionnaire du bouton OK
 		// Controler les valeurs, enregistrer les preferences

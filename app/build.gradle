@@ -3,12 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    namespace "com.lpi.sonometre"
+
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.lpi.sonometre"
         minSdk 27
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -28,6 +30,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildToolsVersion '34.0.0'
 }
 
 dependencies {

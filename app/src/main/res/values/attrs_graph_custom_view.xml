@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="GraphCustomView">
+        <attr name="NbMaxValeurs" format="integer" />
+        <attr name="CouleurFond" format="color" />
+        <attr name="CouleurAxe" format="color" />
+        <attr name="CouleurGraphMin" format="color" />
+        <attr name="CouleurGraphMax" format="color" />
+        <attr name="CouleurTexte" format="color" />
+        <attr name="EpaisseurGraphe" format="float" />
+        <attr name="TailleFonte" format="dimension"/>
+        <attr name="IdStringMaxDB" format="integer"/>
+        <attr name="IdStringMinDB" format="integer"/>
+        <attr name="IdStringMoyDB" format="integer"/>
+    </declare-styleable>
+</resources>

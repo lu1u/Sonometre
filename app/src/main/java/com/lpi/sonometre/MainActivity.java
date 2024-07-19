@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity
 
 	private Sonometre _sonometre;
 	private JaugeAAiguille _jauge;
+	private GraphCustomView _graphe;
 	private String[] _nomsNiveaux;
 	private int[] _niveauxSonores;
 
@@ -25,9 +26,7 @@ public class MainActivity extends AppCompatActivity
 		super.onResume();
 		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED)
 		{
-
 			ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 0);
-
 		}
 		else
 		{
@@ -35,8 +34,9 @@ public class MainActivity extends AppCompatActivity
 			_sonometre.start(this, level ->
 			{
 				_jauge.setValeur((float) level);
-				_jauge.setText1((int)Math.round(level) + " dB") ;
-				_jauge.setText2( getNomNiveau((int) level) );
+				_graphe.ajouteValeur((float) level);
+				_jauge.setText1((int) Math.round(level) + " dB");
+				_jauge.setText2(getNomNiveau((int) level));
 			});
 		}
 	}
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity
 
 		_sonometre = new Sonometre();
 		_jauge = findViewById(R.id.jauge);
+		_graphe = findViewById(R.id.graphCustomView);
 
 		Resources res = getResources();
 		_nomsNiveaux = res.getStringArray(R.array.NomsNiveaux);

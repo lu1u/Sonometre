@@ -12,4 +12,14 @@
     <string name="nomNiveau7">Rock concert</string>
     <string name="nomNiveau8">Race car</string>
     <string name="nomNiveau9">Airplane taking off</string>
+
+
+    <string name="formatMaxDB">Max: %1$d dB</string>
+    <string name="formatMinDB">Min: %1$d dB</string>
+    <string name="formatMoyDB">Avg: %1$d dB</string>
+    <string name="ui_parametres">Paramètres</string>
+    <string name="ui_calibrage">Calibrage:</string>
+    <string name="ui_valeur_de_calibrage_dependant_du_microphone">Valeur de calibrage dépendant du microphone</string>
+    <string name="ui_delai_d_enregistrement">Délai d\'enregistrement:</string>
+    <string name="ui_d_lai_en_millisecondes_entre_deux_prises_de_niveau_sonore">Délai en millisecondes entre deux prises de niveau sonore</string>
 </resources>

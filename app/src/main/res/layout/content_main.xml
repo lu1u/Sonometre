@@ -10,7 +10,9 @@
     <com.lpi.sonometre.JaugeAAiguille
         android:id="@+id/jauge"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        app:CircAiguilleDepassement="0.15dp"
         app:CircBoutsAiguille="ROUND"
         app:CircBoutsFond="BUTT"
         app:CircCentreAiguille="24dp"
@@ -19,14 +21,31 @@
         app:CircCouleurFondFin="@color/colorAccent"
         app:CircGraduationCouleur="@color/design_default_color_background"
         app:CircGraduationEchelle="10"
-        app:CircGraduationsTaille="12dp"
-        app:CircLargeurAiguille="16dp"
-        app:CircLargeurFond="32dp"
-        app:CircMaximum="140"
+        app:CircGraduationsTaille="20dp"
+        app:CircLargeurAiguille="2dp"
+        app:CircLargeurFond="52dp"
+        app:CircMaximum="120"
         app:CircMinimum="0"
         app:CircTextCouleur="@color/colorPrimary"
         app:CircTextSize="64dp"
         app:CircTexte1="0db"
-        app:CircTexte2="qsfkljhsdklfj ds qfd f"
-        app:CircValeur="20" />
+        app:CircValeur="80" />
+
+    <com.lpi.sonometre.GraphCustomView
+        android:id="@+id/graphCustomView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="4dp"
+        app:CouleurAxe="@color/colorPrimary"
+        app:CouleurFond="@color/design_default_color_background"
+        app:CouleurGraphMax="@color/colorAccent"
+        app:CouleurGraphMin="@color/colorPrimaryLight"
+        app:CouleurTexte="@color/colorPrimaryDark"
+        app:EpaisseurGraphe="4"
+        app:NbMaxValeurs="500"
+        app:TailleFonte="12dp" />
 </LinearLayout>
